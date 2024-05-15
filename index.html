@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>product catalog card design using HTML, CSS, and JavaScript.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 class="specialHeader">My first catalog</h1>
+    <h2 class="specialHeader">Total Cart = </h2>
+    <b id="firstValue">10</b>
+    <script>
+      function addTheValue(secondValue) {
+         var fValue = document.getElementById("firstValue");
+         firstValue.innerHTML = parseInt(fValue.innerHTML) +
+         parseInt(secondValue);
+      }
+   </script>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852115__480.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Product Name</h2>
+          <p class="product-price">$9.99</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addTheValue(10)">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008__480.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Product Name</h2>
+          <p class="product-price">$9.99</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addTheValue(10)">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852114__480.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Product Name</h2>
+          <p class="product-price">$9.99</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addTheValue(10)">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852113__480.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Product Name</h2>
+          <p class="product-price">$9.99</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addTheValue(10)">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="credit">Made with <span style="color:tomato;font-size:20px;">❤ </span>by<a href=""> rich27a</a></div>
+  </body>
+</html>
